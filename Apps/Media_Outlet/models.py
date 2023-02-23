@@ -93,7 +93,7 @@ class Showroom_Details(models.Model):
 
     class Meta:
         db_table = "Showroom_Details"
-        verbose_name_plural = "Showroom_Details"
+        verbose_name_plural = "Showroom Details"
 
 ########################################################################################################################
 
@@ -108,7 +108,7 @@ class class_Details(models.Model):
 
     class Meta:
         db_table = "class_Details"
-        verbose_name_plural = "class_Details"
+        verbose_name_plural = "class Management"
 
 # ----------------------------------------------------------------------------------------------------------------------
 
@@ -136,7 +136,7 @@ class Brand_type(models.Model):
 
     class Meta:
         db_table = "Brand_type"
-        verbose_name_plural = "Brand_type"
+        verbose_name_plural = "Brand type"
 
 # ----------------------------------------------------------------------------------------------------------------------
 
@@ -163,7 +163,7 @@ class Brand_Location(models.Model):
 
     class Meta:
         db_table = "Brand_Location"
-        verbose_name_plural = "Brand_Location"
+        verbose_name_plural = "Brand Location"
 
 # ----------------------------------------------------------------------------------------------------------------------
 
@@ -176,7 +176,7 @@ class Material_Type(models.Model):
 
     class Meta:
         db_table = "Material_Type"
-        verbose_name_plural = "Material_Type"
+        verbose_name_plural = "Material Type"
 
 # ----------------------------------------------------------------------------------------------------------------------
 
@@ -189,7 +189,7 @@ class Light_Type(models.Model):
 
     class Meta:
         db_table = "Light_Type"
-        verbose_name_plural = "Light_Type"
+        verbose_name_plural = "Light Type"
 
 # ----------------------------------------------------------------------------------------------------------------------
 
@@ -215,7 +215,7 @@ class Floor_Diagram(models.Model):
         return self.Showroom
     class Meta:
         db_table = "Floor_Diagram"
-        verbose_name_plural = "Floor_Diagram"
+        verbose_name_plural = "Floor Diagram"
 
 # ----------------------------------------------------------------------------------------------------------------------
 
@@ -223,6 +223,9 @@ class full_img(models.Model):
     Showroom = models.ForeignKey(to=Showroom, blank=False, null=False, on_delete=models.CASCADE)
     Url = models.URLField(blank=True,null=True)
     Grade = models.CharField(max_length=10,blank=False,null=False,choices=(("A+", "A+"), ("B", "B"), ("C", "C"), ("D", "D"), ("E", "E"), ("F", "F"), ("G", "G"), ("H", "H"), ("I", "I"), ("J", "J"), ("K", "K")))
+
+    class Meta:
+        verbose_name_plural = "360 Degree Image"
 
 # ----------------------------------------------------------------------------------------------------------------------
 
@@ -235,10 +238,10 @@ class Ad_Status(models.Model):
 
     class Meta:
         db_table = "Ad_Status"
-        verbose_name_plural = "Ad_Status"
+        verbose_name_plural = "AD Status"
 ########################################################################################################################
 
-class Outlet_Media(models.Model):
+class AssetManagement(models.Model):
     class_Details = models.ForeignKey(to=class_Details, blank=True, null=True, on_delete=models.SET_NULL)
     Showroom = models.ForeignKey(to=Showroom, blank=True, null=True, on_delete=models.SET_NULL)
     Brand_type = models.ForeignKey(to=Brand_type,blank=True, null=True, on_delete=models.SET_NULL)
@@ -261,7 +264,7 @@ class Outlet_Media(models.Model):
         return self.Showroom.name
 
     class Meta:
-        db_table = "Outlet_Media"
-        verbose_name_plural = "Outlet_Media"
+        db_table = "AssetManagement"
+        verbose_name_plural = "Asset Management"
 
 ########################################################################################################################

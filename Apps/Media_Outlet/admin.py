@@ -98,11 +98,11 @@ class Light_TypeAdmin(ImportExportModelAdmin):
 admin.site.register(Light_Type, Light_TypeAdmin)
 
 
-class Outlet_MediaAdmin(ImportExportModelAdmin):
+class AssetAdmin(ImportExportModelAdmin):
     pass
 
 
-admin.site.register(Outlet_Media,Outlet_MediaAdmin)
+admin.site.register(AssetManagement,AssetAdmin)
 
 
 class VendorsAdmin(ImportExportModelAdmin):
