@@ -209,7 +209,7 @@ class Status(models.Model):
 
 class Floor_Diagram(models.Model):
     Showroom = models.ForeignKey(to=Showroom, blank=True, null=True, on_delete=models.SET_NULL)
-    Floor_diagram = models.ImageField()
+    Floor_diagram = models.URLField(blank=True,null=True)
 
     def __str__(self):
         return self.Showroom
@@ -250,14 +250,14 @@ class AssetManagement(models.Model):
     Height = models.CharField(max_length=20,blank=True,null=True)
     Material_Type = models.ForeignKey(to=Material_Type, blank=True,null=True, on_delete=models.SET_NULL)
     Light_Type = models.ForeignKey(to=Light_Type, blank=True, null=True, on_delete=models.SET_NULL)
-    Asset_Image = models.ImageField(blank=True,null=True)
+    Asset_Image = models.URLField(blank=True,null=True)
     status = models.CharField(max_length=10,blank=True,null=True, choices=(("Enable", "Enable"), ('Disable', 'Disable')))
     Other_Comments = models.CharField(max_length=1000,blank=True,null=True)
     Brand = models.ForeignKey(to=Brand,blank=True,null=True,on_delete=models.SET_NULL)
     Model_Name = models.CharField(max_length=100,blank=True,null=True)
     Vendor = models.ForeignKey(to=Vendors,blank=True,null=True,on_delete=models.SET_NULL)
     Expire_On = models.DateField(null=True,blank=True)
-    AD_Image = models.ImageField(blank=True,null=True)
+    AD_Image = models.URLField(blank=True,null=True)
     Ad_Status = models.ForeignKey(to=Ad_Status, blank=True, null=True, on_delete=models.SET_NULL)
 
     def __str__(self):

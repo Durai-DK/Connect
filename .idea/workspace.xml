@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bbcdcaa-9b2d-4161-8a11-b8290112e553" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Connect.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Apps/Media_Outlet/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Apps/Media_Outlet/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/Media_Outlet/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/Media_Outlet/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Apps/Media_Outlet/migrations/0011_alter_assetmanagement_ad_image_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Apps/Media_Outlet/migrations/0012_alter_floor_diagram_floor_diagram.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Apps/Media_Outlet/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/Media_Outlet/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apps/Media_Outlet/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/Media_Outlet/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apps/Media_Outlet/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/Media_Outlet/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Apps/Media_Outlet/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/Media_Outlet/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Connect/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Connect/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
